@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('/landing-page-main/css-guide/reset.css');
+
+
+:root{
+
+
+  /* font family and weight */
+  --ff-regular: 'Barlow', sans-serif;
+  --ff-bold: 'Fraunces', serif;
+
+  --fw-light:600;
+  --fw-regular:700;
+  --fw-bold:900;
+
+}
+
+body{
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-regular);
+  font-size: 1.125rem;
+}
