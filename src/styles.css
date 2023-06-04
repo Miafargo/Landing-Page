@@ -1,21 +1,25 @@
-@import url('/landing-page-main/css-guide/reset.css');
+@import url("/landing-page-main/css-guide/reset.css");
 
-
-:root{
-
-
+:root {
   /* font family and weight */
-  --ff-regular: 'Barlow', sans-serif;
-  --ff-bold: 'Fraunces', serif;
+  --ff-regular: "Barlow", sans-serif;
+  --ff-bold: "Fraunces", serif;
 
-  --fw-light:600;
-  --fw-regular:700;
-  --fw-bold:900;
-
+  --fw-light: 600;
+  --fw-regular: 700;
+  --fw-bold: 900;
 }
 
-body{
+body {
   font-family: var(--ff-regular);
   font-weight: var(--fw-regular);
   font-size: 1.125rem;
+}
+
+.logobot {
+  fill: black;
+}
+
+.navbar {
+  background-color: black;
 }
