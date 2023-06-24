@@ -1,4 +1,4 @@
-@import url('/landing-page-main/css-guide/reset.css');
+@import url('./reset.css');
 
 
 :root{
@@ -12,10 +12,26 @@
   --fw-regular:700;
   --fw-bold:900;
 
+  --soft-red:hsl(7, 99%, 70%);
+  --yellow:hsl(51, 100%, 49%);
+  --dark-desat-cyan:hsl(167, 40%, 24%);
+  --dark-blue:hsl(198, 62%, 26%);
+  --dark-moderate-cyan:hsl(168, 34%, 41%);
+
+  --very-dark-desat-blue:hsl(212, 27%, 19%);
+  --very-dark-gray-blue:hsl(213, 9%, 39%);
+  --grayish-blue:hsl(232, 10%, 55%);
+  --white:hsl(0, 0%, 100%);
+
 }
 
 body{
   font-family: var(--ff-regular);
   font-weight: var(--fw-regular);
   font-size: 1.125rem;
+}
+
+h1,h2,h3{
+  font-family: var(--ff-bold);
+  font-weight: var(--fw-bold);
 }
