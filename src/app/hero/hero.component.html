@@ -2,9 +2,6 @@
   <!-- mobile and desktop -->
 
   <section class="hero__section">
-    <!-- <nav class="hero__popup">
-      <button class="hero__btnpopup">About</button><button class="hero__btnpopup">Services</button><button class="hero__btnpopup">Projects</button>
-    </nav> -->
     <picture class="hero__background">
       <source
         srcset="assets/images/desktop/image-header.jpg"
@@ -19,7 +16,7 @@
 
     <nav class="hero__navbar">
       <img src="assets/images/logo.svg" alt="logo" class="hero__logo-mobile" />
-      <button class="hero__button">
+      <button class="hero__button" (click)="onOpen()">
         <img
           src="assets/images/icon-hamburger.svg"
           alt="hamburger"
@@ -31,6 +28,15 @@
         <button class="hero__navigations">Services</button>
         <button class="hero__navigations">Projects</button>
         <button class="hero__contacts">Contacts</button>
+      </div>
+      <div *ngIf="popup === true" class="hero__nav-mobile">
+        <div class="triangle"></div>
+        <div class="hero__mobile-btn">
+          <button class="hero__nav-btn">About</button>
+          <button class="hero__nav-btn">Services</button>
+          <button class="hero__nav-btn">Projects</button>
+          <button class="hero__nav-contacts">Contact</button>
+        </div>
       </div>
     </nav>
 
