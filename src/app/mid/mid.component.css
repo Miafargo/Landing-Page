@@ -1,0 +1,36 @@
+.mid{
+  min-width: 375px;
+  max-width: 600px;
+}
+
+.mid__brand{
+  display:grid;
+  row-gap: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+
+}
+
+h2{
+  font-size:2rem;
+}
+
+.mid__detail{
+  color:var(--grayish-blue)
+}
+
+.anchor{
+  color: var(--very-dark-desat-blue);
+  text-decoration: none;
+  font-family: var(--ff-bold);
+  pointer-events: none;
+}
+
+@media screen and (min-width:600px) {
+
+  .mid{
+    max-width: 1440px;
+    
+
+  }
+}
