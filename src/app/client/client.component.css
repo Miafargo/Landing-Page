@@ -1,0 +1,55 @@
+.client {
+  min-width: 375px;
+  max-width: 600px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.client__title {
+  color: var(--grayish-blue);
+  letter-spacing: 0.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.client__section {
+  display: grid;
+}
+
+.client__comment {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 1.5rem;
+}
+
+.client__image {
+  border-radius: 5rem;
+  width: 5rem;
+}
+
+.client__say {
+  color: var(--very-dark-gray-blue);
+  padding: 1.5rem 0;
+}
+
+.client__name {
+  font-family: var(--ff-bold);
+  padding: 0.7rem 0;
+}
+
+.client__pos {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .client {
+    max-width: 1440px;
+  }
+  .client__section {
+    display: flex;
+  }
+}
