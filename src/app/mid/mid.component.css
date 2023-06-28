@@ -7,7 +7,10 @@
   display: grid;
   row-gap: 1rem;
   padding: 1.5rem;
+  align-self: center;
+  justify-self: center;
   text-align: center;
+
 }
 
 h2 {
@@ -26,17 +29,29 @@ h2 {
 }
 
 .mid__design {
-  position: relative;
+  display:grid;
+  grid-template-columns: 2rem auto auto auto 2rem;
+  grid-template-rows: repeat(4,1fr);
+  
+}
+
+.mid__pic, .mid__graphic{
+  grid-row: 3/5;
+}
+
+.mid__pic{
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  
 }
 
 .mid__graphic {
-  position: absolute;
-  width: 100%;
-  top: 23rem;
-  left: 0;
-
+  grid-column: 2/4;
+  
   color: var(--very-dark-desat-blue);
 }
+
+
 
 .mid__detail-design {
   color: var(--very-dark-desat-blue);
@@ -66,12 +81,23 @@ h2 {
   }
   .mid-five {
     grid-area: 3/1/4/2;
+    display:grid;
   }
   .mid-six {
     grid-area: 3/2/4/3;
+    display:grid;
   }
 
-  .mid__graphic {
-    position: static;
+  .mid-two, .mid-four{
+    row-gap: .2rem;
+    padding: .4rem;
   }
+
+  .mid__graphic{
+    display:none;
+  }
+  
 }
+
+
+  
