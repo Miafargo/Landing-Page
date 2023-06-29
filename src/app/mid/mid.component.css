@@ -1,6 +1,6 @@
 .mid {
   min-width: 375px;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .mid__brand {
@@ -20,11 +20,11 @@ h2 {
   color: var(--grayish-blue);
 }
 
-.anchor {
+.mid__anchor-yellow, .mid__anchor-pink {
   color: var(--very-dark-desat-blue);
-  text-decoration: none;
+  text-decoration: transparent;
   font-family: var(--ff-bold);
-  pointer-events: none;
+  
 }
 
 .mid__design {
@@ -57,7 +57,21 @@ h2 {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+.mid__anchor-pink:hover{
+  cursor: pointer;
+  text-decoration:underline;
+  text-decoration-color: var(--soft-red);
+  text-decoration-thickness: 0.2rem;
+}
+
+.mid__anchor-yellow:hover{
+  text-decoration:underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: 0.2rem;
+}
+
+
+@media screen and (min-width: 700px) {
   .mid {
     max-width: 1440px;
     display: grid;
@@ -124,11 +138,16 @@ h2 {
 
   .mid-two {
     grid-area: 1/1/2/2;
+    text-align: left;
+    padding:3rem;
   }
   .mid-three {
     grid-area: 2/1/3/2;
   }
   .mid-four {
     grid-area: 2/2/3/3;
+    text-align: left;
+    padding:3rem;
   }
+
 }
